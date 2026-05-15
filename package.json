@@ -1,6 +1,6 @@
 {
   "name": "@flun/env",
-  "version": "3.1.15",
+  "version": "3.1.16",
   "description": "A simple package to read .env environment files",
   "type": "module",
   "types": "index.d.ts",
@@ -40,8 +40,5 @@
   "engines": {
     "node": ">=22.12.0"
   },
-  "scripts": {
-    "postinstall": "node install.js 2>&1",
-    "test": "echo \"Test completed\" && exit 0"
-  }
+  "scripts": {}
 }
