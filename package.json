@@ -15,6 +15,7 @@
     "index.js",
     "install.js",
     "env.js",
+    "main.js",
     "index.d.ts",
     "CHANGELOG.md"
   ],
