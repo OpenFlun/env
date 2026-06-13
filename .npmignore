@@ -6,8 +6,9 @@
 .idea/
 .npmrc
 node_modules/
-*.ps1
+*.bat
 *.bak
+*.ps1
 *.tgz
 *.tar.gz
 package-lock.json

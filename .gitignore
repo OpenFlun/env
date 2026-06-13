@@ -1,9 +1,10 @@
 .vs/
 .vscode/
-node_modules/
-*.ps1
-package-lock.json
 .npmrc
+node_modules/
+*.bat
 *.bak
 *.tgz
 *.tar.gz
+*.ps1
+package-lock.json
