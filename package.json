@@ -1,6 +1,6 @@
 {
   "name": "@flun/env",
-  "version": "3.1.22",
+  "version": "3.1.23",
   "description": "A simple package to read .env environment files",
   "type": "module",
   "types": "index.d.ts",
