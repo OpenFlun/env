@@ -17,7 +17,8 @@
     "env.js",
     "main.js",
     "index.d.ts",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "README.md"
   ],
   "keywords": [
     "env",
