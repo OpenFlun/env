@@ -1,5 +1,5 @@
 import { exampleLines } from './env.js';
-import { checkAndCreateEnvFile } from './install.js';
+import { copyFile } from './copy-files.js';
 import { env, config } from './main.js';
 
 // =================================== env.js ===================================
@@ -14,16 +14,16 @@ declare module './env.js' {
     export * from './env.js';
 }
 
-// =================================== install.js ===================================
+// =================================== copy-files.js ===================================
 /**
  * ```js
  * // 文件导出内容
- * checkAndCreateEnvFile(); // 检查并创建 .env 示例文件
+ * copyFile(); // 检查并创建 .env 示例文件
  * ```
- * >查看定义:@see {@link checkAndCreateEnvFile}
+ * >查看定义:@see {@link copyFile}
  */
-declare module './install.js' {
-    export * from './install.js';
+declare module './copy-files.js' {
+    export * from './copy-files.js';
 }
 
 // =================================== main.js ===================================

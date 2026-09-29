@@ -9,11 +9,11 @@
   },
   "main": "index.js",
   "bin": {
-    "env-init": "install.js"
+    "env-init": "copy-files.js"
   },
   "files": [
     "index.js",
-    "install.js",
+    "copy-files.js",
     "env.js",
     "main.js",
     "index.d.ts",
@@ -43,7 +43,6 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "postinstall": "node install.js 2>&1",
-    "test": "echo \"Test completed\" && exit 0"
+    "postinstall": "node install.js 2>&1"
   }
 }
