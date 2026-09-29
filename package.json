@@ -12,10 +12,10 @@
     "env-init": "copy-files.js"
   },
   "files": [
-    "index.js",
     "copy-files.js",
     "env.js",
     "main.js",
+    "index.js",
     "index.d.ts",
     "CHANGELOG.md",
     "README.md"
