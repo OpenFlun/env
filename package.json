@@ -34,7 +34,7 @@
     "type": "git",
     "url": "git+https://github.com/OpenFlun/env.git"
   },
-  "homepage": "https://www.npmjs.com/package/@flun/env#readme",
+  "homepage": "https://github.com/OpenFlun/env#readme",
   "bugs": {
     "url": "https://github.com/OpenFlun/env/issues"
   },

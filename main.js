@@ -62,13 +62,14 @@ class EnvLoader {
                     inEscape = valuePart[i] === '\\' && !inEscape;
                 }
                 if (endQuoteIndex !== -1) {
-                    const quotedValue = valuePart.slice(1, endQuoteIndex), rest = valuePart.slice(endQuoteIndex + 1).trimStart();
+                    const quotedValue = valuePart.slice(1, endQuoteIndex),
+                        rest = valuePart.slice(endQuoteIndex + 1).trimStart();
                     if (rest && rest[0] === '#'); // 注释,忽略
                     else if (rest && this.options.debug) console.warn(`⚠️ 忽略值后的多余内容: ${rest}`);
 
                     result[key] = this.#unescape(quotedValue);
                 }
-                else result[key] = valuePart; // 未闭合引号，按原样处理
+                else result[key] = valuePart; // 未闭合引号,按原样处理
             } else {
                 let value, rest;
                 const commentIndex = valuePart.indexOf('#');
@@ -192,16 +193,16 @@ const env = (() => {
 /**
  * 创建一个新的环境变量实例
  * @param {Object|string} options - 配置选项或 .env 文件路径
- * @param {string} options.path - .env 文件路径，默认为当前目录下的 .env
- * @param {string} options.encoding - 文件编码，默认为 'utf8'
- * @param {boolean} options.debug - 是否启用调试模式，默认为 false
+ * @param {string} options.path - .env 文件路径,默认为当前目录下的 .env
+ * @param {string} options.encoding - 文件编码,默认为 'utf8'
+ * @param {boolean} options.debug - 是否启用调试模式,默认为 false
  * @returns {EnvLoader} 新的环境变量实例
  * >查看定义::@see {@link config}
  */
-function config(options = {}) {
+const config = (options = {}) => {
     if (typeof options === 'string') options = { path: options };
     const { path = '.env', encoding = 'utf8', debug = false } = options;
     return new EnvLoader({ path, encoding, debug });
-}
+};
 
 export { env, config };
