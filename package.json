@@ -1,6 +1,6 @@
 {
   "name": "@flun/env",
-  "version": "3.1.26",
+  "version": "3.2.0",
   "description": "A simple package to read .env environment files",
   "type": "module",
   "types": "index.d.ts",
@@ -9,14 +9,16 @@
   },
   "main": "index.js",
   "bin": {
-    "env-init": "copy-files.js"
+    "env": "bin/cli.js"
   },
   "files": [
     "copy-files.js",
+    "bin/",
     "env.js",
     "main.js",
     "index.js",
     "index.d.ts",
+    "LICENSE",
     "CHANGELOG.md",
     "README.md"
   ],
