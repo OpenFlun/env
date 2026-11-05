@@ -3,9 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { exampleLines } from '../env.js';
 
-const cwd = process.env.INIT_CWD || process.cwd(), envPath = path.join(cwd, '.env'),
-  [, , sub, ...args] = process.argv;
-
+const cwd = process.env.INIT_CWD || process.cwd(), envPath = path.join(cwd, '.env'), [, , sub, ...args] = process.argv;
 /**
  * 按 .env 读取规则序列化单行;
  * >查看定义:@see {@link serializePair}
