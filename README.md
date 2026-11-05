@@ -25,15 +25,15 @@
 ```
 @flun/env/
 ├── bin/cli.js      命令行入口(bin: env)
-├── CHANGELOG.md    更新日志
 ├── copy-files.js   postinstall 时生成 .env 示例文件
 ├── env.js          .env 示例文件内容
-├── index.d.ts      类型声明
 ├── index.js        库入口,转发 main.js 的导出
-├── LICENSE         许可
 ├── main.js         env / config 实现
-├── package.json    包配置
-└── README.md       本文件
+├── index.d.ts      类型声明
+├── CHANGELOG.md    更新日志
+├── README.md       本文件
+├── LICENSE         许可
+└── package.json    包配置
 ```
 
 ---
@@ -54,9 +54,6 @@
 }
 ```
 
-> 如果你信任所有安装包,也可以直接在项目 `.npmrc` 中设置 `allow-scripts = false`(表示关闭脚本拦截,所有脚本均允许执行),
-  或删除 `ignore-script` 字段;
-
 ---
 ## 安装
 
@@ -72,10 +69,8 @@ npm i @flun/env
 ### 快速开始
 
 ```bash
-env example      # 生成 .env 示例文件
-env add FOO:bar  # 添加键值对
-env ls           # 列出全部 KEY=VALUE
-npx env ls       # 项目内安装时
+env add FOO:bar      # 添加键值对(全局)
+npx env add FOO:bar  # 添加键值对(当前项目)
 ```
 
 生成位置为 `INIT_CWD`(npm 传入的原始工作目录),不存在该变量时用 `process.cwd()`;
@@ -92,6 +87,7 @@ npx env ls       # 项目内安装时
 | `get KEY`       | 输出单个值                        |
 | `has KEY`       | 检查键是否存在                    |
 | `path`          | 显示 .env 路径                    |
+| `help`          | 显示本帮助                        |
 
 无参数、`help`、`-h`、`--help` 均输出帮助;未知命令先报错再打印帮助,退出码 1;
 
