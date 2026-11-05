@@ -1,6 +1,6 @@
 {
   "name": "@flun/env",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "一个用于读取 .env 环境文件的简单包",
   "type": "module",
   "types": "index.d.ts",
