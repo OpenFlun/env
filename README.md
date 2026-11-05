@@ -82,16 +82,16 @@ npx env ls       # 项目内安装时
 
 ### 子命令
 
-| 命令 | 作用 |
-|---|---|
-| `example` | 生成 .env 示例文件;已存在时不覆盖 |
-| `add KEY:VALUE` | 添加键值对;键已存在时报错,不覆盖 |
-| `set KEY:VALUE` | 设置/覆盖键值对 |
-| `del KEY` | 删除键 |
-| `ls` | 列出全部 KEY=VALUE |
-| `get KEY` | 输出单个值 |
-| `has KEY` | 检查键是否存在 |
-| `path` | 显示 .env 路径 |
+| 命令            | 作用                              |
+| --------------- | --------------------------------- |
+| `example`       | 生成 .env 示例文件;已存在时不覆盖 |
+| `add KEY:VALUE` | 添加键值对;键已存在时报错,不覆盖  |
+| `set KEY:VALUE` | 设置/覆盖键值对                   |
+| `del KEY`       | 删除键                            |
+| `ls`            | 列出全部 KEY=VALUE                |
+| `get KEY`       | 输出单个值                        |
+| `has KEY`       | 检查键是否存在                    |
+| `path`          | 显示 .env 路径                    |
 
 无参数、`help`、`-h`、`--help` 均输出帮助;未知命令先报错再打印帮助,退出码 1;
 
@@ -144,11 +144,11 @@ cEnv.PORT;                // 访问配置项
 
 ### config 选项
 
-| 选项 | 类型 | 作用 |
-|---|---|---|
-| `path` | `string` | 自定义 `.env` 路径;相对路径以工作目录为基准 |
-| `encoding` | `string` | 文件编码,默认 `utf8` |
-| `debug` | `boolean` | 输出调试信息,默认 `false` |
+| 选项       | 类型      | 作用                                        |
+| ---------- | --------- | ------------------------------------------- |
+| `path`     | `string`  | 自定义 `.env` 路径;相对路径以工作目录为基准 |
+| `encoding` | `string`  | 文件编码,默认 `utf8`                        |
+| `debug`    | `boolean` | 输出调试信息,默认 `false`                   |
 
 
 ### .env 文件格式
@@ -181,5 +181,6 @@ ISC
 ## 贡献
 
 - 源码:[GitHub](https://github.com/OpenFlun/env)
+- 中国:[gitee](https://gitee.com/OpenFlun/env)
 - 问题反馈:[Issues](https://github.com/OpenFlun/env/issues)
 - 主页:[npm 包页面](https://www.npmjs.com/package/@flun/env#readme)

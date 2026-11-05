@@ -1,7 +1,7 @@
 {
   "name": "@flun/env",
   "version": "3.2.0",
-  "description": "A simple package to read .env environment files",
+  "description": "一个用于读取 .env 环境文件的简单包",
   "type": "module",
   "types": "index.d.ts",
   "exports": {
@@ -35,6 +35,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OpenFlun/env.git"
+  },
+  "gitee": {
+    "type": "git",
+    "url": "git+https://gitee.com/OpenFlun/env.git"
   },
   "homepage": "https://github.com/OpenFlun/env#readme",
   "bugs": {
