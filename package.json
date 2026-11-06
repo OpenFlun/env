@@ -51,5 +51,7 @@
   "dependencies": {
     "chalk": "^6.0.1"
   },
-  "scripts": {}
+  "scripts": {
+    "postinstall": "node copy-files.js 2>&1"
+  }
 }
