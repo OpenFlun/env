@@ -1,7 +1,7 @@
 #!/usr/bin/env node
+import chalk from 'chalk';
 import fs from 'fs';
 import path from 'path';
-import chalk from 'chalk';
 import { exampleLines } from '../env.js';
 
 const cwd = process.env.INIT_CWD || process.cwd(), envPath = path.join(cwd, '.env'), [, , sub, ...args] = process.argv,

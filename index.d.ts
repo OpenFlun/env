@@ -1,18 +1,6 @@
-import { exampleLines } from './env.js';
 import { copyFile } from './copy-files.js';
+import { exampleLines } from './env.js';
 import { env, config } from './main.js';
-
-// =================================== env.js ===================================
-/**
- * ```js
- * // 文件导出内容
- * const exampleLines=[]; // 预设的 .env 示例文件内容(行数组),供模块生成;
- * ```
- * >查看定义:@see {@link exampleLines}
- */
-declare module './env.js' {
-    export * from './env.js';
-}
 
 // =================================== copy-files.js ===================================
 /**
@@ -24,6 +12,18 @@ declare module './env.js' {
  */
 declare module './copy-files.js' {
     export * from './copy-files.js';
+}
+
+// =================================== env.js ===================================
+/**
+ * ```js
+ * // 文件导出内容
+ * const exampleLines=[]; // 预设的 .env 示例文件内容(行数组),供模块生成;
+ * ```
+ * >查看定义:@see {@link exampleLines}
+ */
+declare module './env.js' {
+    export * from './env.js';
 }
 
 // =================================== main.js ===================================
@@ -39,6 +39,7 @@ declare module './copy-files.js' {
 declare module './main.js' {
     export * from './main.js';
 }
+
 
 // ================================ 导出入口 ================================
 /**

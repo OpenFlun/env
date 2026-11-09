@@ -1,6 +1,6 @@
 import fs from 'fs';
-import path from 'path';
 import { homedir } from 'os';
+import path from 'path';
 import { exampleLines } from './env.js';
 
 class EnvLoader {

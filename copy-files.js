@@ -1,7 +1,7 @@
+import chalk from 'chalk';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import chalk from 'chalk';
 import { exampleLines } from './env.js';
 
 // 要复制的文件位置和文件目标位置
